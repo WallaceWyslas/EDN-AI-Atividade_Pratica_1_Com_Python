@@ -169,3 +169,10 @@ Se o resultado E True, responda "Sim", se o resultado for False, responda "Não"
 
 ### 14. IDADE EM ANOS
 Crie uma funcao que calcule a idade de uma pessoa em dias, baseada no ano de nascimento.
+
+### 15. GERADOR DE SENHA ALEATÓRIA
+Crie Um programa que gera uma senha aleatória com o módulo random, utilizando caracteres especiais, possibilitando o Usuário a informar a quantidade de caracteres dessa senha aleatório.
+
+### 16. GERADOR DE PERFIL ALEATÓRIO
+Crie um programa que gera um perfil de Usuário aleatório usando o API 'Random user Generator'. O programa deve exibir o nome, email e país do Usuário gerado.
+randomuser.me

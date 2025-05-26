@@ -1,10 +1,3 @@
-"""
-Crie Um programa que gera uma senha aleatória com o módulo
-random, utilizando caracteres especiais, possibilitando o
-Usuário a informar a quantidade de caracteres dessa senha
-aleatório.
-"""
-
 import random
 import string
 
