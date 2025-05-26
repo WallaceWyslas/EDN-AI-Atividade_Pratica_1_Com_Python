@@ -156,7 +156,7 @@ Crie uma funcao que calcule a gorjeta a ser deixada em um restaurante, baseada n
 Calcula o valor da gorjeta baseado no total da conta e na porcentagem desejada.
 
 Parametros:
-- valor_conta (float): O valor total da contaâ€‹
+- valor_conta (float): O valor total da conta
 - porcentagem_gorjeta (float): A porcentagem da gorjeta (ex: 15 para 15%)
 
 Retorna:
