@@ -165,7 +165,7 @@ O valor da gorjeta calculada.
 ### 13. PALINDROMO
 Crie uma funcao que verifique se uma palavra ou frase e um palindromo 
 (le-se igual de tras para frente, ignorando espacos e pontuacao). 
-Se o resultado E True, responda â€œSimâ€, se o resultado for False, responda "Não"
+Se o resultado E True, responda "Sim", se o resultado for False, responda "Não"
 
 ### 14. IDADE EM ANOS
 Crie uma funcao que calcule a idade de uma pessoa em dias, baseada no ano de nascimento.
