@@ -150,3 +150,22 @@ O programa deve continuar solicitando numeros ate que o usuario digite 'fim'.
 Para cada numero inserido, o programa deve informar se e par ou impar. 
 Se o usuario inserir algo que nao seja um numero inteiro, o programa deve informar o erro e continuar. 
 No final, o programa deve exibir a quantidade de numeros pares e impares inseridos.
+
+### 12. GORJETA
+Crie uma funcao que calcule a gorjeta a ser deixada em um restaurante, baseada no valor total da conta e na porcentagem de gorjeta desejada.
+Calcula o valor da gorjeta baseado no total da conta e na porcentagem desejada.
+
+Parametros:
+- valor_conta (float): O valor total da contaâ€‹
+- porcentagem_gorjeta (float): A porcentagem da gorjeta (ex: 15 para 15%)
+
+Retorna:
+O valor da gorjeta calculada.
+
+### 13. PALINDROMO
+Crie uma funcao que verifique se uma palavra ou frase e um palindromo 
+(le-se igual de tras para frente, ignorando espacos e pontuacao). 
+Se o resultado E True, responda â€œSimâ€, se o resultado for False, responda "Não"
+
+### 14. IDADE EM ANOS
+Crie uma funcao que calcule a idade de uma pessoa em dias, baseada no ano de nascimento.
