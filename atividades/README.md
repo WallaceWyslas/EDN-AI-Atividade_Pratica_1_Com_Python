@@ -180,3 +180,7 @@ randomuser.me
 ### 17. CONSULTOR DE CEP
 Desenvolvo um programa que consulte informações de endereço a partir de um CEP fornecido pelo usuário, utilizando a API ViaCEP. O programa deve exibir o logradouro, bairro, cidade e estado correspondentes ao CEP consultado.
 viacep.com.br
+
+### 18. CONSULTOR DE COTAÇÃO
+Crie Um programa que consulte a cotação atual de uma moeda estrangeira em relação ao Real Brasileiro (BRL). O usuário deve informar o código da moeda desejada (ex: USD, EUR, GBP), e o programa deve exibir o valor atual, máximo e mínimo da cotação, além da data e hora da última atualização. Utilize a API da AwesomeAPI paro obter os dados de cotação.
+https://docs.awesomeapi.com.br/api-de-moedas

@@ -1,26 +1,37 @@
-"""
-Crie Um programa que consulte a cotação atual de uma moeda estrangeira em relação ao Real Brasileiro (BRL). O usuário deve informar o código da moeda desejada (ex: USD, EUR, GBP), e o programa deve exibir o valor atual, máximo e mínimo da cotação, além da data e hora da última atualização. Utilize a API da AwesomeAPI paro obter os dados de cotação.
-https://docs.awesomeapi.com.br/api-de-moedas
-"""
 import requests
 
-test = requests.get("https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL?token=d304bbe091b0dac958d7dc4eb4f7e351a2e0df24ef43aaf186c31f70680bf7f5")
-
-def cotacao(moeda):
-    moeda = moeda.upper()
-    consulta = requests.get("https://economia.awesomeapi.com.br/json/last/" + moeda + "-BRL")
-    dados = consulta.json()
-    
-    dados_high = dados[moeda + 'BRL']['high']
-    dados_low = dados[moeda + 'BRL']['low']
-    dados_data = dados[moeda + 'BRL']['create_date']
-    print(f'Máximo: {dados_high}')
-    print(f'Mínimo: {dados_low}')
-    print(f'Data e Hora: {dados_data}')
+def cotacao():
+    while True:
+        moeda = input("Digite uma moeda: ")
+        moeda = moeda.upper()
+        consulta = requests.get("https://economia.awesomeapi.com.br/json/last/" + moeda + "-BRL")
+        dados = consulta.json()
+        moeda_completa = moeda + 'BRL'
+        
+        try:
+            if moeda_completa in dados:
+                dados_bid = dados[moeda_completa]['bid']
+                dados_high = dados[moeda + 'BRL']['high']
+                dados_low = dados[moeda + 'BRL']['low']
+                dados_data = dados[moeda + 'BRL']['create_date']
+                
+                print('')
+                print(f"Cotação da moeda {moeda}-BRL")
+                print(f'Valor atual:    {float(dados_bid):.4f}')
+                print(f'Valor Máximo:   {float(dados_high):.2f}')
+                print(f'Valor Mínimo:   {float(dados_low):.2f}')
+                print(f'Data e Hora:    {dados_data}')
+                break
+            else:
+                if 'status' in dados and dados['status'] == 404:
+                    print("Erro: Código Inválido!")
+                    continue
+            
+        except KeyboardInterrupt:
+            print("Programa encerrado!")        
 
 def main():
-    moeda = input("Digite uma moeda: ")
-    cotacao(moeda)
+    cotacao()
 
 if __name__ == "__main__":
     main()
