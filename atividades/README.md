@@ -176,3 +176,7 @@ Crie Um programa que gera uma senha aleatória com o módulo random, utilizando 
 ### 16. GERADOR DE PERFIL ALEATÓRIO
 Crie um programa que gera um perfil de Usuário aleatório usando o API 'Random user Generator'. O programa deve exibir o nome, email e país do Usuário gerado.
 randomuser.me
+
+### 17. CONSULTOR DE CEP
+Desenvolvo um programa que consulte informações de endereço a partir de um CEP fornecido pelo usuário, utilizando a API ViaCEP. O programa deve exibir o logradouro, bairro, cidade e estado correspondentes ao CEP consultado.
+viacep.com.br
