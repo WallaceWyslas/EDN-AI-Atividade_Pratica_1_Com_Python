@@ -184,3 +184,9 @@ viacep.com.br
 ### 18. CONSULTOR DE COTAÇÃO
 Crie Um programa que consulte a cotação atual de uma moeda estrangeira em relação ao Real Brasileiro (BRL). O usuário deve informar o código da moeda desejada (ex: USD, EUR, GBP), e o programa deve exibir o valor atual, máximo e mínimo da cotação, além da data e hora da última atualização. Utilize a API da AwesomeAPI paro obter os dados de cotação.
 https://docs.awesomeapi.com.br/api-de-moedas
+
+### 19. LER ARQUIVO LOG
+Leia um arquivo que contém dados de log de treinamento de modelos de Machine Learning. Calcule a média e o desvio padrão do tempo de execução constantes.
+
+### 20. LER E ESCREVER DADOS
+Crie um script em Python que escreva e leia dados em um arquivo CSV, TXT e JSON. Os arquivos devem conter informações de pessoas, com colunas Nome, Idade e Cidade.
